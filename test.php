@@ -58,7 +58,7 @@ if(isset($_POST['submit'])){
   
   <input type= "submit" name="submit" value="Отправить">
 </form> 
-	<?php if($message['prize']):?>
+	<?php if(isset($message['prize'])):?>
 	<img src= "components/prize.php" />
 	<?php else: ?>
 	<?= array_shift($message); ?>
